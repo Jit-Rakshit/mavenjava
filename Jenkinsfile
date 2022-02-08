@@ -19,7 +19,7 @@ pipeline {
         }*/
         stage('Deliver') {
             steps {
-                sh 'sudo -S ./jenkins/scripts/deliver.sh'
+                sh 'sudo -S Azure@123456 ./jenkins/scripts/deliver.sh'
             }
         }
     }
