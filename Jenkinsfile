@@ -19,7 +19,7 @@ pipeline {
         }*/
         stage('Deliver') {
             steps {
-                sh 'sudo -S Azure@123456 ./jenkins/scripts/deliver.sh'
+                sh 'java -jar /var/lib/jenkins/workspace/Gitmaven/target/myapp-1.0-SNAPSHOT.jar'
             }
         }
     }
